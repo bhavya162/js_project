@@ -22,3 +22,23 @@
     margin-left : 240%;
     color: white;
 }
+#hdimg {
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 30%;    /*adjust vertical position */
+   left: 50%;  
+  transform: translate(-50%, -50%); /* center text */
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  background: rgba(0,0,0,0.5); /* semi-transparent background */
+  padding: 10px;
+  border-radius: 5px;
+  margin :auto;
+  padding: 10%;
+  padding-left: 35%;
+  padding-right: 35%;
+}
