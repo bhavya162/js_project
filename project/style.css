@@ -1,0 +1,24 @@
+#icon1,#icon2{
+    border-radius : 50%;
+    background-color: white;
+    margin: 5%;
+    justify-content: center;
+    border: 2px solid white;
+}
+.badge{
+    background-color: rgb(168, 168, 244);
+    border: 2px solid rgb(121, 121, 241);
+    color: rgb(122, 2, 22);
+    margin-left : 5%;
+    padding: 1%;
+    font-size: 20px;
+    text-align: center;
+    width: 300px;
+}
+#badg{
+    margin-left: 18%;
+}
+#icon{
+    margin-left : 240%;
+    color: white;
+}

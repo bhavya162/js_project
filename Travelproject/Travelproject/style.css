@@ -1,0 +1,566 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+:root {
+  --dark-blue: #313041;
+  --maintheme: #e8604c;
+  --baby-pink:#fbdbd6;
+}
+body {
+  box-sizing: border-box;
+}
+/* TOPBAR  */
+.topbar {
+  background-color: var(--dark-blue);
+}
+.topbar span {
+  color: var(--maintheme);
+}
+.topbar-btn {
+  background-color: var(--maintheme);
+  color: white;
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 1;
+}
+.topbar-btn:hover {
+  color: black;
+  box-shadow: inset 0 3.5em 0 0 white;
+}
+
+/* NAVBAR  */
+.navs:hover {
+  animation: tada 1s;
+  text-decoration: underline 4px solid var(--maintheme);
+}
+
+.nav-btn:hover {
+  background-color: var(--maintheme);
+  border-color: black;
+}
+/* HERO SECTION  */
+.hero-text h1 {
+  font-family: "Dancing Script";
+}
+/* .................. MEDIA QUERY */
+@media (max-width: 425px) {
+  .hero-text {
+    top: 50% !important;
+    transform: translateY(-50%);
+  }
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+/* HERO SECTION CARD */
+.hero-card {
+  left: 15%;
+}
+.h-cardtwo {
+  background-color: var(--maintheme);
+  color: white;
+  overflow: hidden;
+}
+.h-cardtwo .btn{
+  background-color: var(--maintheme);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: 0.7s;
+  z-index: 1;
+}
+.h-cardtwo .btn:hover {
+  color: white;
+  background-color: black;
+}
+/* DESTINATION PLACES */
+.des-head {
+  font-family: "Dancing Script";
+  color: var(--maintheme);
+}
+.des-eff:hover {
+  animation: pulse 0.6s;
+}
+
+.destination-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 250px;
+}
+.destination-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.destination-text {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.destination-tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.large-card {
+  height: 300px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--dark-blue);
+  /* background-image: url(https://tevily-nextjs.vercel.app/_next/static/media/main-slider-1-1.62fecf08.jpg);
+  background-size: cover; */
+
+  padding: 50px 0;
+}
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.f p {
+  color: white;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: 3px #e45d4c underline;
+}
+.footer .icon {
+  color: #f05d48;
+  margin-right: 10px;
+}
+.subscribe-box {
+  background-color: #292837;
+  border-radius: 5px;
+  padding: 10px;
+}
+.subscribe-box input {
+  background-color: #292837;
+  border: none;
+  text-align: center;
+}
+.subscribe-box input::placeholder {
+  color: white;
+}
+.subscribe-btn {
+  background-color: #e45d4c;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.subscribe-btn:hover {
+  background-color: #b83a2c;
+}
+
+/* .............ABOUT SECTION  */
+/* BANNER AND BREADCRUMB  */
+.ab-banner {
+  background: url("images/about-hero.jpg") no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.ab-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.ab-banner h1 {
+  z-index: 1;
+  font-weight: bold;
+  font-family: dancing script;
+}
+.breadcrumb-container {
+  padding: 15px;
+  font-size: 14px;
+}
+.breadcrumb-container a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ABOUT HERO SECTION  */
+.about-section {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+.abt-img:hover {
+  animation: pulse 1s;
+}
+.bg-var {
+  background-color: var(--maintheme);
+}
+.highlight {
+  color: var(--maintheme);
+}
+.ab-h{
+  color: var(--dark-blue);
+}
+.ab-p {
+  color: var(--maintheme);
+  font-family: "Dancing Script";
+}
+/* ABOUT TESTIMONALS CARD SLIDERS  */
+.slide-container {
+  width: 100%;
+  background-color: rgb(243, 241, 241);
+}
+.slide-container h2{
+  color: var(--dark-blue);
+}
+.slider-head{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card {
+  border-radius: 25px;
+  background-color: white;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+  min-height: 220px;
+}
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px 25px 90px 90px;
+}
+.overlay-color {
+  background-color: var(--maintheme);
+}
+.overlay::before,
+.overlay::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+}
+.overlay::after {
+  border-radius: 0 0 0 0;
+}
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 3px;
+}
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+ border: 5px solid var(--dark-blue);
+}
+.card-img:hover{
+  animation: pulse 1s;
+}
+.name {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: dancing script;
+  color: var(--dark-blue);
+}
+.description {
+  font-size: 14px;
+  color: black;
+  text-align: center;
+  height: 80px;
+  overflow: hidden;
+}
+
+.button {
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--dark-blue);
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: var(--maintheme);
+}
+.button:hover{
+  color: white;
+  background-color: var(--dark-blue);
+}
+.swiper-navBtn {
+color:var(--dark-blue)!important ;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 35px;
+}
+.swiper-button-next {
+  right: 0;
+}
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--maintheme)!important;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--dark-blue) !important ;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+      margin: 0 10px;
+  }
+
+  .swiper-navBtn {
+      display: none;
+  }
+}
+
+/*  PROFFESIONAL PEOPLE SECTION  */
+.team-section {
+  text-align: center;
+  padding: 60px 0px;
+  background-color: #f8f9fa;
+}
+
+.team-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--dark-blue);
+  text-decoration: underline 5px var(--maintheme);
+}
+.team-section h2{
+  color: var(--dark-blue);
+}
+.team-member {
+  transition: transform 0.3s ease-in-out;
+}
+.team-member:hover {
+  transform: scale(1.05);
+}
+.team-member img {
+  width: 100%;
+  border-radius: 10px;
+  animation-duration: 1s;
+}
+.team-member:hover img {
+  animation-name: jackInTheBox;
+}
+.team-member h5 {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.team-member span {
+  color: #e74c3c;
+  font-size: 14px;
+  font-family: cursive;
+}
+
+/* ...........CONTACT */
+.con-banner {
+  background: url("images/about-hero.jpg") no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.con-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.con-banner h1 {
+  z-index: 1;
+  font-weight: bold;
+  font-family: dancing script;
+}
+/* CONTACT HERO SECTION */
+.con-section {
+  padding: 50px 0;
+}
+.con-left-sec h3 {
+  color: var(--maintheme);
+  font-family: dancing script;
+}
+.con-left-sec h1 {
+  font-weight: bold;
+}
+.con-socials span {
+  background-color: var(--baby-pink);
+}
+.con-socials span:hover {
+  background-color: var(--maintheme);
+  transform: scale(1.2);
+  color: white;
+}
+.con-right-sec button {
+  background-color: var(--maintheme);
+}
+.con-right-sec button:hover {
+  background-color: var(--dark-blue);
+}
+.cont-inp {
+  background-color: #fff0ee;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+}
+/* CONTACT CARDS  */
+.con-cards {
+  background-color: #fff0ee;
+}
+.con-cards:hover {
+  animation: bounce 1s;
+}
+/* ..........DESTINATION SECTION  */
+/* BANNER AND BREADCRUMB  */
+.des-banner {
+  background: url("images/about-hero.jpg") no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.des-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.des-banner h1 {
+  z-index: 1;
+  font-weight: bold;
+  font-family: dancing script;
+}
+.breadcrumb-container {
+  padding: 15px;
+  font-size: 14px;
+}
+.breadcrumb-container a {
+  text-decoration: none;
+  color: black;
+}
+/* DESTINATION HERO SECTION  */
+.hero-head{
+  color: var(--dark-blue);
+  text-decoration: underline 5px var(--maintheme);
+}
+.des-hero-buttons{
+  background-color: var(--baby-pink);
+  cursor: pointer;
+}
+.des-hero-buttons:hover{
+animation: pulse 1s;
+} 
+.blue-icon{
+  color: #283363;
+}
+.yellow-icon{
+  color: #977A00;
+}
+.red-icon{
+  color: red;
+}
+/* TOP DESTINATIONS SECTION */
+.destinations h5{
+  color: var(--maintheme);
+  font-size: 23px;
+  font-family: dancing script;
+}
+.destination-card2 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+.destination-card2:hover {
+  transform: translateY(-8px);
+}
+
+.destination-image img {
+  border-radius: 15px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.destination-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.destination-overlay h5,
+.destination-overlay small {
+  margin: 0;
+}
