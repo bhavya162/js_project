@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <h4>Convert Kilometers to miles</h4>
+    <input type="number" id='k'> <br>
+    <button onclick="x()">Submit</button>
+    <h1 id='output'></h1>
+    <h4>Convert celcius to fahrenheit</h4>
+    <input type="number" id='val'> <br>
+    <button onclick="f()">Submit</button>
+    <h1 id='output2'></h1>
+    <button onclick="gen()">Generate random number</button>
+    <h2 id="r"></h2>
+    <script>//to convert kilo meters in miles
+        let x= () =>{
+        let kilo = document.getElementById('k').value;
+        let convert = 0.62137;
+        let miles = kilo*convert;
+        document.getElementById('output').innerText = miles;
+        }
+        let f=() =>{
+        let celcius = document.getElementById('val').value;
+        let fahren = (celcius*1.8)+32;
+        document.getElementById('output2').innerText = fahren;
+    }
+        let gen=() =>{
+           let g = Math.random()*1000;
+          // document.write(Math.floor(g));
+           document.getElementById('r').innerText = Math.floor(g);
+        }    
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="styleconv.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Temperature Convertor <span><i class="fa-solid fa-temperature-three-quarters"></i></span></h2>
+        <input type="text" id='cl' class='values'> <span class='icon'><i class="fa-solid fa-c"></i></span><br>
+        <input type="text" id='fr' class='values'> <span class='icon'><i class="fa-solid fa-f"></i></span><br>
+        <input type="text" id='kl' class='values'> <span class='icon'><i class="fa-solid fa-k"></i></span><br>
+        <button type='button' onclick='reset()'>Reset</button>
+    </div>
+    <script>
+       let celcius = document.querySelector('#cl');
+       let farhen = document.querySelector('#fr');
+       let kelvin = document.querySelector('#kl');
+
+       celcius.addEventListener('input',function (){
+           let ctemp = parseFloat(celcius.value) ;
+           let ftemp =(ctemp*(9/5)) + 32;
+           let ktemp =(ctemp+ 273.15);
+           if(ctemp !== null && !isNaN(ctemp)){
+           farhen.value = Math.round(ftemp);
+           kelvin.value = Math.round(ktemp);
+           }
+        })
+        farhen.addEventListener('input',function (){
+           let ftemp = parseFloat(farhen.value) ;
+           let ctemp =(ftemp - 32)*(5/9);
+           let ktemp =(ftemp - 32) * 5/9 + 273.15;
+           
+           if(ftemp !== null && !isNaN(ftemp)){
+           celcius.value = Math.round(ctemp);
+           kelvin.value = Math.round(ktemp);
+           }
+        })
+        kelvin.addEventListener('input',function (){
+           let ktemp = parseFloat(kelvin.value) ;
+           let ctemp =(ktemp - 273.15);
+           let ftemp =(ktemp - 273.15)*(9/5)+32
+           if(ftemp !== null && !isNaN(ftemp)){
+           celcius.value = Math.round(ctemp);
+           farhen.value = Math.round(ftemp);
+           }
+        })
+       function reset(){
+        document.querySelectorAll('.values').forEach(el => el.value ='');
+       }
+    </script>
+</body>
+</html>
